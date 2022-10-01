@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+@font-face {
+   font-family: "audiowide";
+   src: url();
+}
+
+html {
+   background-color: #0039e6;
+   font-family: "audiowide";
+}
+
+body {
+   width: 100%;
+   height: 0;
+   padding: 0 0 40%;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-left: auto;
+   margin-right: auto;
+   font-family: "audiowide";
+}
+
+/* nav styles */
+nav.horizontalNavigation {
+   text-align: left;
+}
+
+nav.horizontalNavigation ul{
+   
+   display: inline-block;
+   list-style-type: none;
+}
+
+nav.horizontalNavigation li {
+   width:fit-content;
+   margin-left: 1em;
+   line-height: 2em;
+   padding-top: 5%;
+   text-align: center;
+   display: block;
+   float: left;
+}
+
+body > header > nav > ul > li > a > img{
+   
+   margin-left: 1em;
+   padding-top:5%;
+   line-height: 2em;
+   width: 50px;
+   overflow: hidden;
+   position: relative;
+   display: inline-block;
+   object-fit:contain;
+}
+
+nav.horizontalNavigation a {
+   background-color: transparent;
+   display: block;
+   font-family: "audiowide";
+   font-size:medium;
+   line-height:normal;
+}  
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: #0039e6;
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: #e6c300;
+   border-radius: 30%;
+} 
+
+/* header styles*/
+
+
+body > header{
+   color: #0039e6;
+   background-color: #e6c300;
+   font-size: 0.9em;
+   
+   padding: 0;
+   width: 100%;
+}
+
+body > header h1 {
+   font-size: 1.5em;
+   line-height: 2.4em;
+   letter-spacing: 0.3em;
+   text-align: center;
+   font-weight: normal;
+   color: #0039e6;
+}
+
+body > article > h1, body > section > h1, body > aside > h1, body > section > article > h1 {
+   font-family: "audiowide";   
+   padding: 0.5em 0;
+}
+
+/* body styles */
+
+
+body > main > div > div > img { /* Year Up Photo*/
+   object-fit: cover;
+   width: 300px;
+   height: 300px;
+   overflow: hidden;
+   position: relative;
+   display: inline-block;
+   border:4px solid;
+   border-radius: 50%;
+   border-color: #e6c300;
+}
+
+
+body > main > div > div.imgdes > blockquote { /* Year Up Photo Description*/
+   
+   color: #e6c300;
+   object-fit:contain;
+   
+}
+
+input {
+   border : 4px solid #e6c300;
+   } 
+
+body > main > div > div > nav.signupButton > ul > li > a { 
+   color: #0039e6;
+   overflow: hidden;
+   position: relative;
+   display: block;
+   object-fit:contain;
+   float: left;
+   
+   border: 4px solid;
+   border-color: #e6c300;
+   background-color :#e6c300;
+   padding: 3px;
+}
+
+body > main > div > div > nav > ul > li > a > img { /* Social Media Icons */
+   margin-left: 1em;
+   padding-top:5%;
+   line-height: 2em;
+   width: 50px;
+   overflow: hidden;
+   position: relative;
+   display: block;
+   object-fit:contain;
+   float: left;
+   
+   border: 4px solid;
+   border-color: #e6c300;
+   background-color: white;
+   padding: 3px;
+
+}
+
+body > main > div > div > nav.socialIcons > ul > li {
+   float:left;
+   justify-content: baseline;
+}
+
+label,h4{
+   color:#e6c300
+}
+
+/* Footer Styles */
+
+footer {
+   color: #0039e6;
+   background-color: #e6c300;
+   text-align: center;
+   font-size: smaller;
+   padding: 25px;
+   width: 100%;
+}

@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.grid-container{
+   display: grid;
+   
+   grid-template-areas: "header header"
+                        "image  login" /**/
+                        "imgdes imgdes"
+                        "footer footer";
+   grid-column-gap: 15px;
+   grid-row-gap: 15px;
+   
+}
+
+body > .image {grid-area:image;}
+body > .imgdes {grid-area: imgdes;}
+body > .login {grid-area: login;}
+body > footer {grid-area: footer;}
+
+.image{
+   grid-row: 1/2;
+   grid-column: 1/2;
+   justify-self:right;
+   grid-area: image;
+}
+
+.login{
+   grid-row: 1/2;
+   grid-column: 2/2;
+   justify-self:first baseline;
+   grid-area: login;
+
+}
+
+.imgdes{
+   position: relative;
+   margin: 0;
+   padding: 0;
+   justify-self: center;
+   grid-area: imgdes;
+}
+
